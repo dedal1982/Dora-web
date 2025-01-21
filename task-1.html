@@ -17,13 +17,15 @@
           </a>
           <ul class="header__nav wow bounceInRight">
             <li>
-              <a class="header__link" href="#skill">Портфолио</a>
+              <a class="header__link" href="index.html#skill">Портфолио</a>
             </li>
             <li>
-              <a class="header__link" href="#about">Обо мне</a>
+              <a class="header__link" href="index.html#about">Обо мне</a>
             </li>
             <li>
-              <a class="header__link" href="#connection">Связаться со мной</a>
+              <a class="header__link" href="index.html#connection"
+                >Связаться со мной</a
+              >
             </li>
           </ul>
         </div>
@@ -70,6 +72,34 @@
                 >далее
                 <img src="./images/arrow-task.png" alt="icon" />
               </a>
+              <div class="still">
+                <h4 class="skills__title">ЕЩЕ</h4>
+                <div class="task-info-inner">
+                  <ul class="task-info-select">
+                    <li data-tab="1">
+                      <span class="active"></span>
+                      Блокинг
+                    </li>
+                    <li data-tab="2">
+                      <span></span>
+                      Детализация
+                    </li>
+                    <li data-tab="3">
+                      <span></span>
+                      Визуализация
+                    </li>
+                  </ul>
+                  <div data-page="1" class="skills__page active">
+                    <img src="./images/still-1.jpg" alt="image" />
+                  </div>
+                  <div data-page="2" class="skills__page">
+                    <img src="./images/still-2.jpg" alt="image" />
+                  </div>
+                  <div data-page="3" class="skills__page">
+                    <img src="./images/still-3.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -114,5 +144,6 @@
     <script>
       new WOW().init();
     </script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
