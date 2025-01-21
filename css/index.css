@@ -556,8 +556,8 @@ section {
   background: #ffffff;
 }
 .task-info-select li.active span {
-  background: #ff0000;
-  border: 1px solid #ff0000;
+  background: gray;
+  border: 1px solid gray;
 }
 .skills__page {
   max-width: 1264px;
