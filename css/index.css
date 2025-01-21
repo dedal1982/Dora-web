@@ -79,7 +79,7 @@ section {
   height: 106px;
   background: #f1f1f1;
   border-radius: 23px;
-  margin: 20px 22px 0 26px;
+  margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
