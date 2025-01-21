@@ -401,6 +401,7 @@ section {
   font-size: 180px;
   line-height: 198px;
   color: #ff0000;
+  margin-top: 30px;
 }
 .footer__adress {
   display: flex;
