@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/animate.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>DESIGN</title>
   </head>
@@ -14,7 +15,7 @@
           <a class="header__logo" href="index.html">
             <img src="./images/logo.png" alt="logo" />
           </a>
-          <ul class="header__nav">
+          <ul class="header__nav wow bounceInRight">
             <li>
               <a class="header__link" href="#skill">Портфолио</a>
             </li>
@@ -33,7 +34,12 @@
             <div class="promo__wrapper">
               <div class="promo__image">
                 <h2 class="promo__subtitle">ЖИЗНЬ</h2>
-                <img src="./images/promo.png" alt="image" />
+                <img
+                  data-wow-delay="0.5s"
+                  class="wow zoomInDown"
+                  src="./images/promo.png"
+                  alt="image"
+                />
               </div>
             </div>
           </div>
@@ -42,7 +48,7 @@
           <div class="container">
             <div class="info__wrapper">
               <div class="info__top">
-                <div class="info__text">
+                <div data-wow-delay="0.6s" class="info__text wow bounceInLeft">
                   <h2 class="info__title">
                     меня зовут <span>Dora</span> и я веб-дизайнер
                   </h2>
@@ -53,12 +59,12 @@
                     Это и&nbsp;есть красота.&lt;
                   </h3>
                 </div>
-                <div class="info__image">
+                <div class="info__image wow bounceInRight">
                   <img src="./images/info-image.png" alt="image" />
                   <h4 id="about" class="info__font">PORTFOLIO</h4>
                 </div>
               </div>
-              <div class="info__all">
+              <div data-wow-delay="0.5s" class="info__all wow zoomIn">
                 <div class="info__all-aside">
                   <p class="info__all-key">место</p>
                   <p class="info__all-key key-one">город1</p>
@@ -95,8 +101,16 @@
           <div class="container">
             <div class="skills__wrapper">
               <div id="skill" class="skills__top">
-                <h2 class="skills__title">Навыки</h2>
-                <ul class="skills__software">
+                <h2
+                  data-wow-delay="0.5s"
+                  class="skills__title wow bounceInLeft"
+                >
+                  Навыки
+                </h2>
+                <ul
+                  data-wow-delay="0.5s"
+                  class="skills__software wow bounceInRight"
+                >
                   <li class="skills__soft">
                     <img src="./images/software1.png" alt="icon" />
                   </li>
@@ -121,15 +135,23 @@
                 </ul>
               </div>
               <div class="skills__centr">
-                <h2 class="skills__title">опыт</h2>
-                <h3 class="skills__subtitle">
+                <h2 data-wow-delay="0.5s" class="skills__title wow zoomInLeft">
+                  опыт
+                </h2>
+                <h3 data-wow-delay="0.5s" class="skills__subtitle wow zoomInUp">
                   ТЕКТОНИК<br />АКТЕРСКОЕ МАСТЕРСТВО<br />МЕЙКАП
                 </h3>
-                <h2 class="skills__title centr-title">Проекты</h2>
+                <h2
+                  data-wow-delay="0.5s"
+                  class="skills__title centr-title wow zoomInRight"
+                >
+                  Проекты
+                </h2>
               </div>
               <div class="skills__items">
                 <a
-                  class="skills__link"
+                  data-wow-delay="0.7s"
+                  class="skills__link wow zoomIn"
                   href="task-1.html
                 "
                 >
@@ -143,7 +165,11 @@
                     alt="acon"
                   />
                 </a>
-                <a class="skills__link" href="task-2.html">
+                <a
+                  data-wow-delay="0.5s"
+                  class="skills__link wow zoomIn"
+                  href="task-2.html"
+                >
                   <div class="skills__text">
                     <span class="skills__number">02</span>
                     <h3 class="skills__work">Практическая работа</h3>
@@ -177,13 +203,17 @@
                 </a>
               </li>
               <li>
-                <a class="footer__icon" href="#" target="_blank">
+                <a
+                  class="footer__icon"
+                  href="https://www.instagram.com/dashapashtet/"
+                  target="_blank"
+                >
                   <img src="./images/instagram.png" alt="icon" />
                 </a>
               </li>
             </ul>
           </div>
-          <span class="footer__title">dESIGN</span>
+          <span class="footer__title wow rotateIn">dESIGN</span>
           <div class="footer__adress">
             <p class="footer__text">давайте вместе создадим крутой проект</p>
             <p class="footer__text">Пащенко Дарья, Санкт-Петербург, 2024</p>
@@ -191,5 +221,9 @@
         </div>
       </footer>
     </div>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
